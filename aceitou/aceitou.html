@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcando!</title>
+    <link rel="stylesheet" href="../index.css">
+</head>
+
+<body>
+    <form action="https://formspree.io/f/myeevodb" method="POST" id="container">
+
+        <div class="campo-grupo">
+            <label for="ideia">O que vamos fazer?</label>
+            <select name="ideia" id="ideia" required>
+                <option value="">Escolha uma opção</option>
+                <option value="cinema">Cinema</option>
+                <option value="parque">Passeio</option>
+                <option value="cafeteria">Cafeteria</option>
+            </select>
+        </div>
+
+        <div class="campo-grupo">
+            <label for="local">Onde vamos?</label>
+            <select name="local" id="local" disabled required>
+                <option value="">Escolha a ideia primeiro</option>
+            </select>
+        </div>
+
+        <div class="campo-grupo">
+            <label for="data">Que dia?</label>
+            <input type="date" name="data" required>
+        </div>
+
+        <button type="submit" id="btn-enviar">Confirmar Encontro! ❤️</button>
+    </form>
+
+    <script src="aceitou.js"></script>
+</body>
+
+</html>
